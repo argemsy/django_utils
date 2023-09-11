@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "django-utils"
+version = "0.1.0"
+description = ""
+authors = ["Argenis Vargas <argenis1818@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.10"
+django = "^4.2.5"
+requests = "^2.31.0"
+pydantic = "^2.3.0"
+pydantic-settings = "^2.0.3"
+python-dotenv = "^1.0.0"
+dj-database-url = "^2.1.0"
+psycopg2 = "^2.9.7"
+pre-commit = "^3.4.0"
+
+
+
+[tool.poetry.group.lint.dependencies]
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+mypy = "^1.5.1"
+safety = "^2.3.5"
+black = "21.5b1"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^7.4.2"
+pytest-django = "^4.5.2"
+pytest-mock = "^3.11.1"
+pytest-asyncio = "^0.21.1"
+syrupy = "^4.5.0"
+
+[tool.black]
+line-length = 79
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
