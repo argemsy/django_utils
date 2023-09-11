@@ -16,17 +16,17 @@ repos:
     rev: 21.5b1
     hooks:
       - id: black
-        entry: black blk_soft_utils/
+        entry: black tools/
   - repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
       - id: flake8
-        entry: flake8 blk_soft_utils/
+        entry: flake8 tools/
   - repo: https://github.com/PyCQA/isort
     rev: 5.9.3
     hooks:
       - id: isort
-        args: ["--profile", "black", "blk_soft_utils/"]
+        args: ["--profile", "black", "tools/"]
   - repo: local
     hooks:
       - id: safety
