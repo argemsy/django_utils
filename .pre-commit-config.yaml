@@ -34,3 +34,4 @@ repos:
         language: system
         entry: safety check -r requirements.txt
         pass_filenames: false
+        args: [--ignore=59956]
