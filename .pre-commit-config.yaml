@@ -16,17 +16,17 @@ repos:
     rev: 21.5b1
     hooks:
       - id: black
-        entry: black tools/
+        entry: black django_utils/
   - repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
       - id: flake8
-        entry: flake8 tools/
+        entry: flake8 django_utils/
   - repo: https://github.com/PyCQA/isort
     rev: 5.9.3
     hooks:
       - id: isort
-        args: ["--profile", "black", "tools/"]
+        args: ["--profile", "black", "django_utils/"]
   - repo: local
     hooks:
       - id: safety

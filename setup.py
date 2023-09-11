@@ -31,7 +31,7 @@ def get_requirements(filename="requirements.txt"):
 
 
 setuptools.setup(
-    name="blk_soft_django_utils",
+    name="django_utils",
     version=version,  # do NOT CHANGE - change from pyproject.toml
     include_package_data=True,
     author="DevOps",
